@@ -20,11 +20,16 @@ function nuevoUsuario(){
     let contra = document.getElementById("Contrasenea").value;
     let confi = document.getElementById("Confirmar").value;
     
-    console.log("Nombre: "+nomb1);
-    console.log("E-Mail: "+correo);
-    console.log("Contrasenea: "+contra);
-    console.log("confirmar Contrasena: "+confi);
-    regresarLogin();
+    if(contra === confi){
+	    console.log("Nombre: "+nomb1);
+    	console.log("E-Mail: "+correo);
+    	console.log("Contrasenea: "+contra);
+    	console.log("confirmar Contrasena: "+confi);
+    	regresarLogin();
+	}
+	else{
+		console.log("La contraseña no coincide");
+}
     
 }
 function regresarLogin(){
