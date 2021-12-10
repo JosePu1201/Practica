@@ -3,13 +3,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/javascript.js to edit this template
  */
 function holaCompleto() {
+    irnuevoCliente();
     let hola = document.getElementById("nombre1").value;
     let contra1 = document.getElementById("Contrasenea1").value;
     
     console.log("Contraseña: " + contra1);
     console.log("Usuario: " + hola);   
-    
-    irnuevoCliente();
 }
 function irnuevoUsuario(){    
     location.href = "LoginCompleto.html";
